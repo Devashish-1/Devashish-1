@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Movie Recommendation System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Movie Recommender</h1>
+        <form action="/recommendations" method="post">
+            <label for="movie_title">Enter a Movie Title:</label>
+            <input type="text" id="movie_title" name="movie_title" required>
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>
